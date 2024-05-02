@@ -45,9 +45,9 @@ try:
         tag_data = send_rfid_cmd('BB 00 22 00 00 22 7E')
         # Convert RFID response to detected tag
         if '6C DC B9 33' in tag_data:  # Tag 1
-            last_speed = 30
+            last_speed = 50
         elif '88 DD 43 D1' in tag_data:  # Tag 2
-            last_speed = 10
+            last_speed = 15
         elif 'E8 DC 42 5E' in tag_data:  # Tag 3
             last_speed = 0
         
