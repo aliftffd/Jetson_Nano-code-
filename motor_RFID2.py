@@ -34,11 +34,8 @@ try:
     GPIO.output(IN2, GPIO.LOW)
     GPIO.output(IN3, GPIO.HIGH)
     GPIO.output(IN4, GPIO.LOW)
-    time.sleep(10) 
-    
-    i = 20 
-    
-    for i in range(0,100,1):
+    time.sleep(10)   
+    for i in range(100):
         GPIO.output(IN1, GPIO.HIGH)
         GPIO.output(IN2, GPIO.LOW)
         GPIO.output(IN3, GPIO.HIGH)
@@ -47,6 +44,18 @@ try:
         GPIO.output(IN1, GPIO.LOW)
         GPIO.output(IN2, GPIO.LOW)
         GPIO.output(IN3, GPIO.LOW)
+        GPIO.output(IN4, GPIO.LOW)  
+        time.sleep(0.05)
+    for i in range(100): 
+        GPIO.output(IN1, GPIO.HIGH)
+        GPIO.output(IN2, GPIO.LOW)
+        GPIO.output(IN3, GPIO.HIGH)
+        GPIO.output(IN4, GPIO.LOW)  
+        time.sleep(0.05)
+    for i in range (100): 
+        GPIO.output(IN1, GPIO.HIGH)
+        GPIO.output(IN2, GPIO.LOW)
+        GPIO.output(IN3, GPIO.HIGH)
         GPIO.output(IN4, GPIO.LOW)  
         time.sleep(0.05)
     # Stop
